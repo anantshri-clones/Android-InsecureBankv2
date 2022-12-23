@@ -17,6 +17,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    lintOptions{
+        checkReleaseBuilds false
+        abortOnError false
+    }
 }
 
 dependencies {
@@ -30,4 +34,5 @@ repositories {
     maven {
         url "https://jitpack.io"
     }
+
 }
